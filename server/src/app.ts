@@ -6,8 +6,6 @@ import errorHandler from "./middleware/error-handler.middleware.ts";
 
 const app: Application = express();
 
-
-
 app.use(
   cors({
     origin: process.env.CLIENT_URL || "http://localhost:5173",

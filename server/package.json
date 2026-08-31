@@ -1,0 +1,35 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node --env-file=.env --watch-path=./src src/server.ts",
+    "start": "node --env-file=.env --experimental-transform-types src/server.ts",
+    "build": "tsc"
+  },
+  "author": "",
+  "license": "MIT",
+  "description": "EduReach College Intelligence Platform — Backend (Node.js 24)",
+  "dependencies": {
+    "@langchain/classic": "1.0.19",
+    "@langchain/google-genai": "2.1.20",
+    "@langchain/mongodb": "1.1.0",
+    "@langchain/textsplitters": "1.0.1",
+    "bcryptjs": "3.0.3",
+    "cors": "2.8.6",
+    "express": "5.2.1",
+    "jsonwebtoken": "9.0.3",
+    "langchain": "1.2.26",
+    "mongoose": "9.2.1",
+    "nanoid": "3.0.0"
+  },
+  "devDependencies": {
+    "@types/cors": "2.8.19",
+    "@types/express": "5.0.6",
+    "@types/jsonwebtoken": "9.0.10",
+    "@types/node": "25.3.0",
+    "typescript": "5.9.3"
+  }
+}

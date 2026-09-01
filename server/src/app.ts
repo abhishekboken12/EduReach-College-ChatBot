@@ -3,6 +3,7 @@ import type { Application, Request, Response } from "express";
 import cors from "cors";
 import authRoutes from "./routes/auth.routes.ts";
 import errorHandler from "./middleware/error-handler.middleware.ts";
+import chatRoutes from "./routes/chat.routes.ts";
 
 const app: Application = express();
 
@@ -18,6 +19,7 @@ app.use(express.json({ limit: "10mb" }));
 app.use(express.urlencoded({ extended: true }));
 
 app.use("/api/auth", authRoutes);
+app.use("/api/chat", chatRoutes);
 
 app.use((_req: Request, res: Response) => {
   res.status(404).json({ success: false, message: "Route not found." });

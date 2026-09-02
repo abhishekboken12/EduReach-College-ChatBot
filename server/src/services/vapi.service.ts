@@ -39,7 +39,7 @@ export const initiateOutboundCall = async (payload: CallPayload): Promise<VapiCa
     body: JSON.stringify({
       assistantId: VAPI_ASSISTANT_ID,
       assistantOverrides: {
-        firstMessage: `Hi ${userName}, this is Ava from EduReach College. I'm calling to help you with information about ${preferredCourse || "our programs"}. Do you have a quick moment?`,
+        firstMessage: `Hi ${userName}, this is Abhi from EduReach College. I'm calling to help you with information about ${preferredCourse || "our programs"}. Do you have a quick moment?`,
         variableValues: {
           studentName: userName,
           studentEmail: userEmail,

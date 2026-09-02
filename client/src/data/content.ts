@@ -176,3 +176,32 @@ export const eventsGallery = [
   { title: "University Fest", image: images.universityFest },
   { title: "Sports Meet", image: images.collegeOutdoor },
 ];
+
+
+export const vapiFormContent = {
+  courses: [
+    "B.Tech Computer Science (CSE)",
+    "B.Tech Electronics (ECE)",
+    "B.Tech AI & Data Science",
+    "B.Tech Mechanical (ME)",
+    "B.Tech Civil (CE)",
+    "B.Tech Information Technology (IT)",
+    "M.Tech Computer Science",
+    "M.Tech VLSI Design",
+    "M.Tech Structural Engineering",
+    "MBA Finance",
+    "MBA Marketing",
+    "MBA HR",
+    "MBA IT",
+  ],
+  topics: [
+    "Course Details",
+    "Fee Structure",
+    "Admission Process",
+    "Placement Statistics",
+    "Campus Life",
+    "Scholarships",
+    "Hostel Facilities",
+    "Other",
+  ],
+};
